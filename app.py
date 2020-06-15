@@ -17,7 +17,6 @@ class App(tk.Frame):
         self.video_title = tk.StringVar()
         self.video_time = tk.StringVar()
         self.video_thumbnail = ''
-        # ImageTk.PhotoImage(Image.open(APP_THUMBNAIL_LOCATION).resize((700, 450), Image.ANTIALIAS))
         self.download_location = ''
 
         menu = tk.Menu(self.master)
