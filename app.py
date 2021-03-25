@@ -87,7 +87,7 @@ class App(tk.Frame):
                 if self.download_location == '':
                     self.choose_save_directory()
                 self.status.set('Downloading audio...')
-                yt.streams.filter(only_audio=True).first().download(os.path.abspath(self.download_location))
+                yt.streams.filter(file_extension='mp4').first().download(os.path.abspath(self.download_location))
                 self.status.set('Audio has been downloaded successfully!')
 
             if option == 2:
@@ -109,6 +109,7 @@ class App(tk.Frame):
         self.download_location = os.path.abspath(filedialog.askdirectory())
 
 
+"""
 def main():
     root = tk.Tk()
     app = App(root)
@@ -120,3 +121,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+"""

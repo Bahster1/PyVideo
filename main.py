@@ -8,6 +8,7 @@ def main():
     app.configure(bg='black')
     root.wm_title('PyVideo')
     root.geometry('900x700')
+    root.resizable(False, False)
     root.mainloop()
 
 
