@@ -1,10 +1,10 @@
-from app import App
+from MainApplication import MainApplication
 import tkinter as tk
 
 
 def main():
     root = tk.Tk()
-    app = App(root)
+    app = MainApplication(root)
     app.configure(bg='black')
     root.wm_title('PyVideo')
     root.geometry('900x700')
